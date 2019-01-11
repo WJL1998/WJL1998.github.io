@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import 'reset-css';
+import "react-flexible";
+import "font-awesome/css/font-awesome.min.css";
+import "antd/dist/antd.min.css";
 import * as serviceWorker from './serviceWorker';
+import App from './router';
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

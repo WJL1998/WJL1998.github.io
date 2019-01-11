@@ -1,11 +1,23 @@
 {
   "name": "new-qcs",
   "version": "0.1.0",
+  "proxy": "https://h5.watsons.com.cn/",
   "private": true,
   "dependencies": {
+    "antd": "^3.11.6",
+    "axios": "^0.18.0",
+    "font-awesome": "^4.7.0",
+    "proxy": "^0.2.4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-scripts": "2.1.2"
+    "react-flexible": "^1.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.2",
+    "react-swipe": "^6.0.3",
+    "reset-css": "^4.0.1",
+    "sass": "^1.15.2",
+    "swipe-js-iso": "^2.1.4",
+    "swiper": "^4.4.6"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,5 +33,10 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "scss": "^0.2.4",
+    "scss-loader": "0.0.1"
+  }
 }
