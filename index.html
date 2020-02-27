@@ -2,14 +2,26 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>520</title>
+    <title>My favorite</title>
     <style>
-        html, body{padding:0px; margin:0px; background:#222; font-family: 'Karla', sans-serif; color:#FFF; height:100%; overflow:hidden;}
+        html, body{padding:0px; margin:0px; background:#222; font-family: 'Karla', sans-serif; color:#FFF; width:100%; overflow:hidden;}
         canvas {width:100%; height:100%;}
-        #text,#text_520{font-family:'楷体'; color:rgb(255,255,3); font-size:20px; position:fixed; left:10%; top:10%;}
-        #text_520{font-size:100px; top:50%; left:50%;}
-        img{position:fixed; top:0; left:0; width:100%;}
-        #last{font-size:12px; bottom:10px; left:50%; position:fixed;}
+        #text,#text_520{font-family:'楷体'; color:rgb(255,255,3); font-size:3rem; position:fixed; left:10%; top:10%;}
+        #text_520{font-size:2rem; top:50%; left:36%;}
+        img{position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;}
+        #last{font-size: 20px;bottom:10px;left: 45%;position:fixed;}
+        @media screen and (max-width: 2000px){
+            #text,#text_520{font-size:20px;}
+            #last{font-size: 20px;left: 45%;}
+        }
+        @media screen and (max-width: 980px){
+            #text,#text_520{font-size:3rem;}
+            #last{font-size: 2rem;left: 36%;}
+        }
         /*
         @keyframes drop {
          0% {
@@ -30,8 +42,8 @@
 <body>
 <canvas id="c"></canvas>
 <div id="text"></div>
-<div id="text_520">卷毛 LOVE 老林</div>
-<img src="./timg.jpg" class="img" />
+<div id="text_520">老林，爸爸爱你</div>
+<img src="520.jpg" class="img" />
 <div id="last">版权所有：Foreile</div>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
@@ -96,8 +108,8 @@
     }
     setTimeout(typing,5000);
     var ctx = document.querySelector('canvas').getContext('2d');
-    ctx.canvas.width = window.innerWidth;
-    ctx.canvas.height = window.innerHeight;
+    ctx.canvas.width = window.screen.width;
+    ctx.canvas.height = window.screen.height;
     var sparks = [];
     var fireworks = [];
     var walker;
