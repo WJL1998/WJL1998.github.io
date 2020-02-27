@@ -90,7 +90,7 @@
     function typing(){
         if(m <= textArr[n].length) {
             text.innerHTML = text.innerHTML.substring(0,text.innerHTML.length-1) + textArr[n].substr(m++,1) + '_';
-            setTimeout(typing,250);
+            setTimeout(typing,100);
         }else {
             if(n < textArr.length-1){
                 text.innerHTML = text.innerHTML.substring(0,text.innerHTML.length-1) + "<br />_";
